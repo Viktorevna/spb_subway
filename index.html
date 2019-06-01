@@ -3,13 +3,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="main.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Mono&display=swap" rel="stylesheet">
   <title>SPb Subway</title>
 </head>
 <body>
   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-  x="0px" y="0px" width="1000px" height="1000px" viewBox="0 0 5724 5580" 
+  x="0px" y="0px" width="1400px" height="750px" viewBox="0 0 7800 4000" 
   enable-background="new 0 0 5724 5580" xml:space="preserve">
+
+    <symbol id="round" viewBox="-3.5 -3.5 7 7">
+      <g transform="rotate(270)">
+        <path d="M0,2c1.103, 0, 2-0.897, 2-2S1.103-2, 0-2s-2, 0.897-2, 2S-1.103, 2, 0, 2 M0, 3.5c-1.934, 0-3.5-1.566-3.5-3.5S-1.934-3.5, 0-3.5
+        S3.5-1.934, 3.5,0S1.934, 3.5,0,3.5L0, 3.5z"/>
+      </g>
+    </symbol>
+    <symbol id="stn_right" viewBox="-3.5 -3.5 7 7">
+      <g transform="rotate(180)">
+        <path  d="M0-2.75c-1.517, 0-2.75, 1.233-2.75, 2.75S-1.517, 2.75, 0, 2.75S2.75, 1.517, 2.75"/>
+      </g>
+    </symbol>
+    <symbol id="stn_top" viewBox="-3.5 -3.5 7 7">
+      <g transform="rotate(90)">
+        <path  d="M0-2.75c-1.517, 0-2.75, 1.233-2.75, 2.75S-1.517, 2.75, 0, 2.75S2.75, 1.517, 2.75"/>
+      </g>
+    </symbol>
+    <symbol id="stn_bottom" viewBox="-3.5 -3.5 7 7">
+      <g transform="rotate(270)">
+        <path  d="M0-2.75c-1.517, 0-2.75, 1.233-2.75, 2.75S-1.517, 2.75, 0, 2.75S2.75, 1.517, 2.75"/>
+      </g>
+    </symbol>
+      
 
     <g class="lines">
       <g class="blue_line">
@@ -59,10 +82,10 @@
 
           <polyline points="3350,1710 3290,1710"/>
 
-          <polyline points="4600,3125 4540,3125"/>
-          <polyline points="4600,3225 4540,3225"/>
-          <polyline points="4600,3325 4540,3325"/>
-          <polyline points="4600,3425 4540,3425"/>
+          <polyline points="4600,3125 4660,3125"/>
+          <polyline points="4600,3225 4660,3225"/>
+          <polyline points="4600,3325 4660,3325"/>
+          <polyline points="4600,3425 4660,3425"/>
         </g>
 
         <g class="green_stations" stroke="#0e9624" stroke-width="20">
@@ -107,17 +130,141 @@
         </g>
       </g>
 
-      <g class="cross_stations">
-       
+      <g class="transfer_stations">
+        <use xlink:href="#round" fill="#ffffff" width="100px" height="100px" transform="matrix(1 0 0 1 3550 1910)" overflow="visible"/>
+        <use xlink:href="#stn_top" fill="#1080ff" width="100px" height="100px" transform="matrix(1 0 0 1 3550 1910)" overflow="visible"/>
+        <use xlink:href="#stn_bottom" fill="#aa0093" width="100px" height="100px" transform="matrix(1 0 0 1 3550 1910)" overflow="visible"/>
+        <use xlink:href="#stn_right" fill="#fc940b" width="100px" height="100px" transform="matrix(1 0 0 1 3550 1910)" overflow="visible"/>
+
+        <use xlink:href="#round" fill="#ffffff" width="100px" height="100px" transform="matrix(1 0 0 1 3550 1535)" overflow="visible"/>
+        <use xlink:href="#stn_top" fill="#1080ff" width="100px" height="100px" transform="matrix(1 0 0 1 3550 1535)" overflow="visible"/>
+        <use xlink:href="#stn_bottom" fill="#0e9624" width="100px" height="100px" transform="matrix(1 0 0 1 3550 1535)" overflow="visible"/>
+
+        <use xlink:href="#round" fill="#ffffff" width="100px" height="100px" transform="matrix(1 0 0 1 4550 1535)" overflow="visible"/>
+        <use xlink:href="#stn_top" fill="#e41212" width="100px" height="100px" transform="matrix(1 0 0 1 4550 1535)" overflow="visible"/>
+        <use xlink:href="#stn_bottom" fill="#0e9624" width="100px" height="100px" transform="matrix(1 0 0 1 4550 1535)" overflow="visible"/>
+
+        <use xlink:href="#round" fill="#ffffff" width="100px" height="100px" transform="matrix(1 0 0 1 5050 1910)" overflow="visible"/>
+        <use xlink:href="#stn_top" fill="#0e9624" width="100px" height="100px" transform="matrix(1 0 0 1 5050 1910)" overflow="visible"/>
+        <use xlink:href="#stn_bottom" fill="#fc940b" width="100px" height="100px" transform="matrix(1 0 0 1 5050 1910)" overflow="visible"/>
+
+        <use xlink:href="#round" fill="#ffffff" width="100px" height="100px" transform="matrix(1 0 0 1 4175 1910)" overflow="visible"/>
+        <use xlink:href="#stn_top" fill="#e41212" width="100px" height="100px" transform="matrix(1 0 0 1 4175 1910)" overflow="visible"/>
+        <use xlink:href="#stn_bottom" fill="#fc940b" width="100px" height="100px" transform="matrix(1 0 0 1 4175 1910)" overflow="visible"/>
+
+        <use xlink:href="#round" fill="#ffffff" width="100px" height="100px" transform="matrix(1 0 0 1 3863.5 2220)" overflow="visible"/>
+        <use xlink:href="#stn_top" fill="#e41212" width="100px" height="100px" transform="matrix(1 0 0 1 3863.5 2220)" overflow="visible"/>
+        <use xlink:href="#stn_bottom" fill="#aa0093" width="100px" height="100px" transform="matrix(1 0 0 1 3863.5 2220)" overflow="visible"/>
+
+        <use xlink:href="#round" fill="#ffffff" width="100px" height="100px" transform="matrix(1 0 0 1 3550 2530)" overflow="visible"/>
+        <use xlink:href="#stn_top" fill="#e41212" width="100px" height="100px" transform="matrix(1 0 0 1 3550 2530)" overflow="visible"/>
+        <use xlink:href="#stn_bottom" fill="#1080ff" width="100px" height="100px" transform="matrix(1 0 0 1 3550 2530)" overflow="visible"/>
       </g>
     </g>
 
-    <!-- <g class="text" font-size="60" font-family="Montserrat">
-      <text transform="matrix(1 0 0 1 5430 2395)">Новочеркасская</text>
-      <text transform="matrix(1 0 0 1 5430 2495)">Ладожская</text>
-      <text transform="matrix(1 0 0 1 5430 2595)">Проспект Большевиков</text>
-      <text transform="matrix(1 0 0 1 5430 2695)">Дыбенко</text>
-    </g> -->
+    <g class="text" font-size="60" font-family="PT Mono">
+      <g class="transfer_text">
+        <text transform="matrix(1 0 0 1 2584 2570)">Технологический институт 1</text>
+        <text transform="matrix(1 0 0 1 2584 2630)">Технологический институт 2</text>
+
+        <text transform="matrix(1 0 0 1 3016 1940)">Сенная площадь</text>
+        <text transform="matrix(1 0 0 1 3232 2000)">Спасская</text>
+        <text transform="matrix(1 0 0 1 3268 2060)">Садовая</text>
+
+        <text transform="matrix(1 0 0 1 3680 1445)">Невский проспект</text>
+        <text transform="matrix(1 0 0 1 3680 1505)">Гостиный двор</text>
+
+        <text transform="matrix(1 0 0 1 4680 1445)">Площадь Восстания</text>
+        <text transform="matrix(1 0 0 1 4680 1505)">Маяковская</text>
+
+        <text transform="matrix(1 0 0 1 5180 1820)">Площадь Александра Невского 1</text>
+        <text transform="matrix(1 0 0 1 5180 1880)">Площадь Александра Невского 1</text>
+
+        <text transform="matrix(1 0 0 1 4005 2260)">Пушкинская</text>
+        <text transform="matrix(1 0 0 1 4005 2320)">Звениговодская</text>
+
+        <text transform="matrix(1 0 0 1 3733 1820)">Владимирская</text>
+        <text transform="matrix(1 0 0 1 3769 1880)">Достоевская</text>
+      </g>
+
+      <g class="blue_text">
+        <text transform="matrix(1 0 0 1 3680 475)">Парнас</text>
+        <text transform="matrix(1 0 0 1 3680 575)">Проспект Просвещения</text>
+        <text transform="matrix(1 0 0 1 3680 675)">Озерки</text>
+        <text transform="matrix(1 0 0 1 3680 775)">Удельная</text>
+        <text transform="matrix(1 0 0 1 3680 875)">Пионерская</text>
+        <text transform="matrix(1 0 0 1 3680 975)">Черная речка</text>
+        <text transform="matrix(1 0 0 1 3680 1075)">Петронрадская</text>
+        <text transform="matrix(1 0 0 1 3680 1175)">Горьковская</text>
+
+        <text transform="matrix(1 0 0 1 3680 2840)">Фрунзенская</text>
+        <text transform="matrix(1 0 0 1 3680 2940)">Московские ворота</text>
+        <text transform="matrix(1 0 0 1 3680 3040)">Электросила</text>
+        <text transform="matrix(1 0 0 1 3680 3140)">Парк Победы</text>
+        <text transform="matrix(1 0 0 1 3680 3240)">Московская</text>
+        <text transform="matrix(1 0 0 1 3680 3340)">Звездная</text>
+        <text transform="matrix(1 0 0 1 3680 3440)">Купчино</text>
+      </g>
+
+      <g class="purple_text">
+        <text transform="matrix(1 0 0 1 2478 475)">Комендантский проспект</text>
+        <text transform="matrix(1 0 0 1 2766 575)">Старая Деревня</text>
+        <text transform="matrix(1 0 0 1 2586 675)">Крестровский остров</text>
+        <text transform="matrix(1 0 0 1 2910 775)">Чкаловская</text>
+        <text transform="matrix(1 0 0 1 2910 875)">Спортивная</text>
+
+        <text transform="matrix(1 0 0 1 2766 1725)">Адмиралтейская</text>
+
+        <text transform="matrix(1 0 0 1 4680 3140)">Обводный канал</text>
+        <text transform="matrix(1 0 0 1 4680 3240)">Волковская</text>
+        <text transform="matrix(1 0 0 1 4680 3340)">Бухарестская</text>
+        <text transform="matrix(1 0 0 1 4680 3440)">Международная</text>
+      </g>
+      
+      <g class="green_text">
+        <text transform="matrix(1 0 0 1 2768 1075)">Беговая</text>
+        <text transform="matrix(1 0 0 1 2480 1175)">Новокрестовская</text>
+        <text transform="matrix(1 0 0 1 2660 1275)">Приморская</text>
+        <text transform="matrix(1 0 0 1 2336 1375)">Васильевский остров</text>
+
+        <text transform="matrix(1 0 0 1 4588 2290)">Елизаровская</text>
+        <text transform="matrix(1 0 0 1 4552 2390)">Ломоносовская</text>
+        <text transform="matrix(1 0 0 1 4588 2490)">Пролетарская</text>
+        <text transform="matrix(1 0 0 1 4768 2590)">Обухово</text>
+        <text transform="matrix(1 0 0 1 4732 2690)">Рыбацкое</text>
+      </g>
+
+      <g class="red_text">
+        <text transform="matrix(1 0 0 1 4680 475)">Девяткино</text>
+        <text transform="matrix(1 0 0 1 4680 575)">Гражданский проспект</text>
+        <text transform="matrix(1 0 0 1 4680 675)">Академическая</text>
+        <text transform="matrix(1 0 0 1 4680 775)">Политехническая</text>
+        <text transform="matrix(1 0 0 1 4680 875)">Площадь Мужества</text>
+        <text transform="matrix(1 0 0 1 4680 975)">Лесная</text>
+        <text transform="matrix(1 0 0 1 4680 1075)">Выборнская</text>
+        <text transform="matrix(1 0 0 1 4680 1175)">Площадь Ленина</text>
+        <text transform="matrix(1 0 0 1 4680 1275)">Чернышевская</text>
+
+        <text transform="matrix(1 0 0 1 2910 2940)">Балтийская</text>
+        <text transform="matrix(1 0 0 1 2982 3040)">Нарвская</text>
+        <text transform="matrix(1 0 0 1 2730 3140)">Кировский завод</text>
+        <text transform="matrix(1 0 0 1 3054 3240)">Автово</text>
+        <text transform="matrix(1 0 0 1 2622 3340)">Ленинский проспект</text>
+        <text transform="matrix(1 0 0 1 2622 3440)">Проспект Ветеранов</text>
+      </g>
+
+      <g class="orange_text">
+        <g>
+          <text transform="matrix(1 0 0 1 4595 1820)">Лиговский</text>
+          <text transform="matrix(1 0 0 1 4595 1880)">проспект</text>
+        </g>
+
+        <text transform="matrix(1 0 0 1 5430 2390)">Новочеркасская</text>
+        <text transform="matrix(1 0 0 1 5430 2490)">Ладожская</text>
+        <text transform="matrix(1 0 0 1 5430 2590)">Проспект Большевиков</text>
+        <text transform="matrix(1 0 0 1 5430 2690)">Дыбенко</text>
+      </g>
+    </g>
   </svg>
   <script src="main.js"></script>
 </body>

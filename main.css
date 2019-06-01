@@ -24,3 +24,6 @@ button {
 button:focus {
   outline: none;
 }
+#stn2 {
+	transform: rotate(90deg)
+}
