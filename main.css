@@ -12,7 +12,7 @@ footer, header, section {
 }
 body {
   line-height: 1;
-  background-color: rgb(255, 255, 255);
+	background-color: rgb(255, 255, 255);
 }
 ul {
 	list-style: none;
@@ -24,6 +24,6 @@ button {
 button:focus {
   outline: none;
 }
-#stn2 {
-	transform: rotate(90deg)
+.blue_station {
+	cursor: pointer;
 }
